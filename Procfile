@@ -1,0 +1,1 @@
+web: python ./verkefni-2.py $PORT
