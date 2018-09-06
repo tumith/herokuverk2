@@ -1,6 +1,7 @@
 from bottle import route, run, template, error, abort, static_file, request
 #import bottle
 #from bottle import *
+from sys import argv
 
 @route('/')
 def index():
@@ -69,4 +70,4 @@ def static_skra(skra):
 def villa(error):
     return "<h2 style='color:red'>Þessi siða finnst ekki</h2><h1>ERROR 404</h2>"
 
-run(host='localhost' ,port='8060', debug=True)
+run(host='localhost' ,port=argv[1], debug=True)
